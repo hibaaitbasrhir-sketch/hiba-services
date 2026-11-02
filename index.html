@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحقيقة في دقيقة 💙 | خدمات هيبة</title>
+<style>
+  :root{--navy:#0A2551;--navy-dark:#071a3a;--navy-soft:#123a75;--cream:#faf6ee;--gold:#c9a227;--gold-soft:#e8cf7a;--ink:#1c2434;--muted:#45506a;--line:#e7dfca}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Segoe UI", Tahoma, Arial, sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}
+  .topbar{background:var(--navy-dark);color:var(--gold-soft);text-align:center;font-size:13.5px;padding:8px 14px}
+  .hero{background:linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);color:#fff;text-align:center;padding:52px 20px 46px}
+  .brand{font-size:15px;letter-spacing:.5px;color:var(--gold-soft);margin-bottom:10px}
+  .hero h1{font-size:32px;font-weight:800;margin-bottom:12px}
+  .hero p{font-size:17px;max-width:600px;margin:0 auto 26px;color:#e9edf5}
+  .btn{display:inline-block;background:var(--gold);color:var(--navy-dark);font-weight:700;font-size:16px;text-decoration:none;padding:12px 26px;border-radius:999px}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+  .wrap{max-width:860px;margin:0 auto;padding:38px 18px 10px}
+  .wrap h2{text-align:center;color:var(--navy);font-size:24px;margin-bottom:8px}
+  .wrap .sub{text-align:center;color:var(--muted);font-size:15px;margin-bottom:26px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:10px}
+  @media (max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;box-shadow:0 4px 14px rgba(10,37,81,.06)}
+  .pimg{width:100%;height:auto;border-radius:10px;display:block;margin-bottom:14px}
+  .card h3{color:var(--navy);font-size:18.5px;margin-bottom:6px}
+  .card p{font-size:14.5px;color:var(--muted);margin-bottom:14px;min-height:52px}
+  .card .btn{background:var(--navy);color:#fff;font-size:14.5px;padding:9px 22px}
+  .card .btn:hover{background:var(--navy-dark)}
+  .price-note{display:inline-block;background:var(--cream);border:1.5px solid var(--gold);color:var(--navy);font-weight:700;font-size:14.5px;border-radius:999px;padding:6px 18px;margin-bottom:14px}
+  .pill-h{display:block;width:fit-content;margin:30px auto 10px;background:var(--navy);color:#fff;font-size:20px;font-weight:800;padding:10px 34px;border-radius:14px;text-align:center}
+  .voices{background:#f0f0f0;border-radius:14px;padding:28px 22px;margin:30px 0 6px;text-align:center}
+  .voices h3{color:var(--navy);font-size:20px;margin-bottom:10px}
+  .voices .quote{font-size:16.5px;color:var(--ink);max-width:560px;margin:0 auto 8px}
+  .voices .note{font-size:13.5px;color:var(--muted)}
+  .voices{background:#f0f0f0;border-radius:14px;padding:28px 22px;margin:30px 0 6px}
+  .voices h3{color:var(--navy);font-size:20px;text-align:center;margin-bottom:16px}
+  .vcard{background:#fff;border-radius:12px;padding:20px;max-width:560px;margin:0 auto;text-align:center;box-shadow:0 4px 14px rgba(10,37,81,.06)}
+  .vcard .qm{display:inline-flex;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-size:26px;align-items:center;justify-content:center;margin-bottom:10px}
+  .vcard p{font-size:15.5px;color:var(--ink)}
+  .vcard .who{margin-top:10px;font-size:13.5px;color:var(--muted)}
+  .faq{max-width:700px;margin:26px auto 6px}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:15.5px}
+  .faq p{font-size:14.5px;color:var(--muted);margin-top:8px}
+  .feats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 6px}
+  @media (max-width:640px){.feats{grid-template-columns:1fr}}
+  .feat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center;box-shadow:0 4px 14px rgba(10,37,81,.06)}
+  .feat .ic{font-size:34px;margin-bottom:8px}
+  .feat h3{color:var(--navy);font-size:18px;margin-bottom:6px}
+  .feat p{font-size:14.5px;color:var(--muted)}
+  .why{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin:30px 0 6px;box-shadow:0 4px 14px rgba(10,37,81,.06)}
+  .why h3{color:var(--navy);font-size:19px;text-align:center;margin-bottom:14px}
+  .why ul{list-style:none;max-width:560px;margin:0 auto}
+  .why li{font-size:15px;padding:5px 0;color:var(--ink)}
+  .why li::before{content:"💙 "}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:8px}
+  @media (max-width:640px){.steps{grid-template-columns:1fr}}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center;box-shadow:0 4px 14px rgba(10,37,81,.06)}
+  .step .num{width:44px;height:44px;margin:0 auto 12px;border-radius:50%;background:var(--gold);color:var(--navy-dark);font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:center}
+  .step h3{color:var(--navy);font-size:17px;margin-bottom:6px}
+  .step p{font-size:14px;color:var(--muted)}
+  .terms{text-align:center;color:var(--muted);font-size:13.5px;max-width:640px;margin:14px auto 0}
+  .help{margin:26px auto 6px;background:#fff;border:1.5px dashed var(--gold);border-radius:14px;text-align:center;padding:26px 20px}
+  .help h3{color:var(--navy);font-size:19px;margin-bottom:6px}
+  .help p{color:var(--muted);font-size:15px;margin-bottom:16px}
+  .links{text-align:center;padding:30px 18px 90px}
+  .links h3{color:var(--navy);font-size:18px;margin-bottom:14px}
+  .links a{display:inline-block;margin:4px 6px;color:var(--navy);border:1.5px solid var(--navy);border-radius:999px;padding:8px 18px;font-size:14.5px;font-weight:600;text-decoration:none}
+  .links a:hover{background:var(--navy);color:#fff}
+  .foot-grid{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px;text-align:right;padding:6px 18px 18px}
+  @media (max-width:640px){.foot-grid{grid-template-columns:1fr;text-align:center}}
+  .foot-grid h4{color:#fff;font-size:16.5px;margin-bottom:10px}
+  .foot-grid p,.foot-grid a{color:#cfd8ea;font-size:14px}
+  .foot-grid a{display:block;text-decoration:none;margin-bottom:7px}
+  .foot-grid a:hover{color:#fff}
+  .foot-brand{font-size:19px;color:#fff;font-weight:800;margin-bottom:8px}
+  .brandblock{background:#131c2e;color:#e8edf5;text-align:center;padding:38px 22px 30px;border-radius:14px;margin:34px 0 0}
+  .brandblock .bname{font-size:30px;font-weight:800;color:#fff;margin-bottom:14px}
+  .brandblock p{max-width:640px;margin:0 auto 18px;font-size:15.5px;line-height:1.9}
+  .brandblock .soc{display:flex;gap:12px;justify-content:center}
+  .brandblock .soc a{width:46px;height:46px;border:1.5px solid #8fa3c8;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:13px;font-weight:700}
+  footer{background:var(--navy);color:#cfd8ea;text-align:center;font-size:13.5px;padding:20px 14px}
+  .sticky-wa{position:fixed;bottom:16px;inset-inline-start:16px;background:#25d366;color:#fff;font-weight:700;font-size:15px;text-decoration:none;padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.28);z-index:50}
+
+  .cmp{width:100%;border-collapse:collapse;background:#fff;border:1.5px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}
+  .cmp th{background:var(--navy);color:#fff;padding:11px 8px;font-size:15.5px}
+  .cmp td{padding:10px 8px;border-top:1px solid var(--line);text-align:center;color:var(--ink)}
+  .cmp td.lbl{text-align:right;font-weight:700;color:var(--navy);white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="topbar">خدمات مهنية عملية — بدون وعود وظيفية وهمية 💙</div>
+<header class="hero">
+  <img src="etqaan-style-hiba-products-2026-10-28/hiba-hero-banner.png" alt="" style="width:100%;display:block;margin:0 auto 20px;border-radius:12px">
+  <div class="brand">الحقيقة في دقيقة 💙</div>
+  <h1>خطوتك المهنية تبدأ من هنا</h1>
+  <p>خدمات عملية تساعدك ترتّب سيرتك الذاتية، وتحسّن حضورك المهني، وتعرف الخطوة التالية بوضوح.</p>
+  <p style="font-weight:700;color:#fff">النتيجة: سيرة وملف مهني يقدّمان خبرتك مثل ما تستاهل.</p>
+  <a class="btn wa" data-msg="هلا هيبة 💙، محتار/ة أي خدمة تناسب وضعي. بقول لك عن وضعي المهني، وأبي مساعدتك أعرف من وين أبدأ، بدون التزام بالشراء." href="#">ساعديني أختار الخدمة المناسبة</a>
+</header>
+<main class="wrap">
+  <h2>اختاري الخدمة الأقرب لاحتياجك</h2>
+  <p class="sub">اضغطي على الخدمة واطلبيها عبر واتساب — السعر واضح قبل ما نبدأ.</p>
+  <span class="pill-h">خدمات التوظيف</span>
+  <p class="sub">سيرتك وخطابك جاهزين للتقديم — بصياغة تقراها أنظمة ATS بوضوح.</p>
+  <div class="grid">
+    <section class="card">
+      <h3>CV Essential</h3>
+      <p>البداية الاحترافية — سيرة ذاتية بلغة واحدة بتنسيق احترافي مناسب لأنظمة ATS، مراجعة بشرية للمحتوى، تعديل واحد. مدة مستهدفة: 3 أيام عمل.</p>
+      <div><span class="price-note">99 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي باقة CV Essential. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-03.png" alt="Career Plus">
+      <div><span class="price-note">خيار موصى به</span></div>
+      <h3>Career Plus</h3>
+      <p>سيرة ذاتية بلغة واحدة، خطاب تغطية مخصص، تحسين الكلمات المفتاحية، مراجعة بشرية — تعديل واحد لكل مستند ضمن النطاق.</p>
+      <div><span class="price-note">179 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي باقة Career Plus. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-02.png" alt="Career Professional">
+      <h3>Career Professional</h3>
+      <p>سيرة ذاتية بالعربية والإنجليزية، خطاب تغطية، تحسين ملف LinkedIn، مراجعة بشرية للنسختين — تعديل واحد ضمن النطاق.</p>
+      <div><span class="price-note">279 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي باقة Career Professional. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-01.png" alt="Career Elite">
+      <h3>Career Elite</h3>
+      <p>سيرة ذاتية ثنائية اللغة، خطاب تغطية، تحسين LinkedIn، إيميل تقديم احترافي، قائمة جهات توظيف مستهدفة حسب مجالك — مع مراجعة نهائية لجميع المخرجات.</p>
+      <div><span class="price-note">399 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي باقة Career Elite. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-04.png" alt="سيرتك بأي لغة">
+      <h3>سيرتك بأي لغة</h3>
+      <p>سيرة ذاتية بأي لغة تختارها، بنظام ATS. — وإضافة لغة ثانية بـ 60 درهم.</p>
+      <div><span class="price-note">99 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة سيرتك بأي لغة. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+    <section class="card">
+      <h3>خطاب تغطية</h3>
+      <p>خطاب تغطية مخصص يناسب الوظيفة اللي تقدمين عليها.</p>
+      <div><span class="price-note">69 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة خطاب تغطية. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+    <section class="card">
+      <h3>إيميل تقديم وظيفة</h3>
+      <p>إيميل تقديم احترافي جاهز يرافق سيرتك عند التقديم.</p>
+      <div><span class="price-note">39 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة إيميل تقديم وظيفة. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-09.png" alt="مراجعة السيرة الذاتية">
+      <h3>مراجعة السيرة الذاتية</h3>
+      <p>مراجعة احترافية لسيرتك الحالية ونقاط التحسين فيها.</p>
+      <div><span class="price-note">39 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة مراجعة السيرة الذاتية. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-11.png" alt="دليلك لكتابة سيرتك الذاتية بنظام ATS">
+      <h3>دليلك لكتابة سيرتك الذاتية بنظام ATS</h3>
+      <p>دليل يساعدك تكتب سيرتك الذاتية بنظام ATS بنفسك.</p>
+      <div><span class="price-note">25 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة دليلك لكتابة سيرتك الذاتية بنظام ATS. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+  </div>
+  <span class="pill-h">الفرق بين الباقات</span>
+  <div style="overflow-x:auto;margin-bottom:6px">
+  <table class="cmp">
+    <tr><th>وجه المقارنة</th><th>CV Essential<br>99 درهم</th><th>Career Plus<br>179 درهم</th><th>Career Professional<br>279 درهم</th><th>Career Elite<br>399 درهم</th></tr>
+    <tr><td class="lbl">سيرة ذاتية</td><td>بلغة واحدة</td><td>بلغة واحدة</td><td>بالعربية والإنجليزية</td><td>بالعربية والإنجليزية</td></tr>
+    <tr><td class="lbl">خطاب تغطية</td><td>—</td><td>مخصص</td><td>✓</td><td>✓</td></tr>
+    <tr><td class="lbl">تحسين LinkedIn</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+    <tr><td class="lbl">إيميل تقديم</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
+    <tr><td class="lbl">قائمة جهات توظيف مستهدفة</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
+    <tr><td class="lbl">المراجعة</td><td>مراجعة بشرية</td><td>مراجعة بشرية</td><td>مراجعة بشرية للنسختين</td><td>مراجعة نهائية شاملة</td></tr>
+  </table>
+  </div>
+  <p class="sub">ملاحظة: تحسين ATS يعني تحسين قابلية قراءة سيرتك وتنظيمها وكلماتها المفتاحية — ولا يضمن اجتياز أنظمة التوظيف أو الحصول على مقابلة.</p>
+<span class="pill-h">الهوية المهنية</span>
+  <p class="sub">حضور مهني واضح على لينكد إن يليق بخبرتك.</p>
+  <div class="grid">
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-05.png" alt="تحسين لينكد إن">
+      <h3>تحسين لينكد إن</h3>
+      <p>إعادة كتابة ملفك على لينكد إن بالكامل مع الكلمات المفتاحية.</p>
+      <div><span class="price-note">129 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة تحسين لينكد إن. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+    <section class="card">
+      <h3>تصميم بنر لينكد إن</h3>
+      <p>بنر احترافي لحسابك على لينكد إن بهويتك المهنية وألوانك.</p>
+      <div><span class="price-note">89 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة تصميم بنر لينكد إن. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-07.png" alt="تصميم بنر ولوجو شخصي لحسابك بلينكد إن">
+      <h3>تصميم بنر ولوجو شخصي لحسابك بلينكد إن</h3>
+      <p>بنر ولوجو شخصي يعكس حضورك المهني على لينكد إن.</p>
+      <div><span class="price-note">119 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة تصميم بنر ولوجو شخصي لحسابك بلينكد إن. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-08.png" alt="دليلك لاحتراف لينكد إن">
+      <h3>دليلك لاحتراف لينكد إن</h3>
+      <p>دليل ذاتي يساعدك تحترف لينكد إن خطوة بخطوة.</p>
+      <div><span class="price-note">49 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة دليلك لاحتراف لينكد إن. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-12.png" alt="بناء براندك الشخصي على لينكد إن">
+      <h3>بناء براندك الشخصي على لينكد إن</h3>
+      <p>حضور مهني واضح على لينكد إن: عنوان ونبذة مقنعة وهوية بصرية وخطة محتوى تناسب مجالك وتبرز خبرتك.</p>
+      <div><span class="price-note">يبدأ من 349 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة بناء براندي الشخصي على لينكد إن. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+  </div>
+<span class="pill-h">التطوير المهني</span>
+  <p class="sub">أدلة وتقارير تطوّرك خطوة بخطوة لين المقابلة.</p>
+  <div class="grid">
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-06.png" alt="تقرير الجاهزية الوظيفية">
+      <h3>تقرير الجاهزية الوظيفية</h3>
+      <p>تقرير يوضح جاهزيتك لسوق العمل وخطواتك التالية.</p>
+      <div><span class="price-note">59 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة تقرير الجاهزية الوظيفية. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+<section class="card">
+      <img class="pimg" src="etqaan-style-hiba-products-2026-10-28/hiba-product-10.png" alt="دليلك لمقابلة العمل">
+      <h3>دليلك لمقابلة العمل</h3>
+      <p>دليل يساعدك تستعد لمقابلة العمل بثقة ووضوح.</p>
+      <div><span class="price-note">59 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي خدمة دليلك لمقابلة العمل. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+    <section class="card">
+      <h3>حزمة الأدوات المهنية — Career Toolkit</h3>
+      <p>ثلاثة أدلة بسعر واحد: دليل ATS ودليل LinkedIn ودليل المقابلات.</p>
+      <div><span class="price-note">99 درهم</span></div>
+      <a class="btn wa" data-msg="هلا هيبة 💙، أبي حزمة الأدوات المهنية Career Toolkit. ممكن تفاصيلها؟" href="#">اطلب عبر واتساب</a>
+    </section>
+  </div>
+<div class="feats">
+    <div class="feat"><div class="ic">✅</div><h3>جودة مضمونة بأسلوبي</h3><p>سيرتك تنبنى بصيغة تقراها أنظمة ATS بوضوح، وتراجعين المسودة معي قبل التسليم النهائي.</p></div>
+    <div class="feat"><div class="ic">💬</div><h3>متابعة على الواتساب</h3><p>أرد على استفساراتك على الواتساب وأتابع طلبك خطوة بخطوة من أول رسالة لين التسليم.</p></div>
+    <div class="feat"><div class="ic">⏱️</div><h3>في وقت قياسي!</h3><p>خلال أقل من ٧٢ ساعة وطلبك يكون بين يديك، من وقت استلام معلوماتك كاملة.</p></div>
+    <div class="feat"><div class="ic">💙</div><h3>سعر واضح من البداية</h3><p>الخدمة والنطاق والسعر والتعديلات المشمولة — كلها واضحة ومكتوبة قبل أي دفع.</p></div>
+  </div>
+  <section class="why" id="about">
+    <h3>ليش تختارين هيبة؟</h3>
+    <ul>
+      <li>خبرة حقيقية في خدمة العملاء وتجربة الضيوف والاستقبال</li>
+      <li>ساعدت ناس كثير توصلها وظايف — عدّلت سير ذاتية وبنيت مواقع</li>
+      <li>كلام واضح عن سوق الشغل مثل ما هو — بدون تجميل وبدون وعود وهمية</li>
+      <li>اتفاق واضح قبل الدفع: الخدمة والنطاق والسعر ومدة التسليم والتعديلات</li>
+    </ul>
+  </section>
+  <h2 style="margin-top:34px">خطوات الاستفادة من الخدمة</h2>
+  <p class="sub">نظام عمل ثابت لكل عميل — من أول رسالة لين التسليم.</p>
+  <div class="steps">
+    <div class="step"><div class="num">١</div><h3>اختار واتفق بأمان</h3><p>اختار خدمتك واطلبها عبر واتساب — توصلك التفاصيل والسعر وشروط الإلغاء والاسترداد قبل أي دفع.</p></div>
+    <div class="step"><div class="num">٢</div><h3>أسئلة قصيرة</h3><p>بعد تأكيد طلبك توصلك أسئلة قصيرة عن خبرتك وهدفك الوظيفي.</p></div>
+    <div class="step"><div class="num">٣</div><h3>مراجعة ومسودة</h3><p>أراجع معلوماتك وأحدد احتياجك الفعلي، وأرسل لك مسودة أولية تراجعينها معي.</p></div>
+    <div class="step"><div class="num">٤</div><h3>مراجعة دقيقة</h3><p>أراجع اللغة والتنسيق والكلمات المفتاحية بما يناسب أنظمة ATS.</p></div>
+    <div class="step"><div class="num">٥</div><h3>التسليم النهائي</h3><p>تستلمين النسخة النهائية في موعدها — مع التعديل المتفق عليه ضمن النطاق.</p></div>
+  </div>
+  <p class="terms">إذا تأخرت في إرسال المعلومات أو الرد على المسودة نتفق معاً على موعد تسليم جديد — وأي عمل خارج النطاق الأصلي يُسعّر ويُتفق عليه قبل تنفيذه.</p>
+  <h2 style="margin-top:34px">الأسئلة الشائعة</h2>
+  <div class="faq" id="faq">
+    <details><summary>ماذا سيحدث بعد شراء الباقة وإتمام عملية الدفع؟</summary><p>نتواصل على الواتساب، نتفق على الخدمة والنطاق والسعر ومدة التسليم كتابةً، ويبدأ الشغل بعد استلام الدفعة المتفق عليها.</p></details>
+    <details><summary>كيف أضمن حقي كعميل عند التعامل مع المتجر؟</summary><p>حقك محفوظ باتفاق مكتوب قبل الدفع يشمل الخدمة والسعر ومدة التسليم والتعديلات المشمولة، وشروط الإلغاء والاسترداد تُشرح لك بوضوح قبل أن تدفع.</p></details>
+    <details><summary>هل يمكنني طلب تعديلات على السيرة الذاتية أو الطلب بعد استلامه؟</summary><p>نعم، يشمل كل طلب تعديلاً واحداً متفقاً عليه ضمن النطاق الأصلي، وأي عمل إضافي يُسعّر ويُتفق عليه قبل تنفيذه.</p></details>
+    <details><summary>كم الوقت المستغرق لتنفيذ طلبي؟</summary><p>خلال أقل من ٧٢ ساعة من استلام معلوماتك كاملة، وإذا تأخرت المعلومات نتفق معاً على موعد جديد.</p></details>
+  </div>
+  <section class="help">
+    <h3>مو متأكد أي خدمة تناسبك؟</h3>
+    <p>ابدأ بمحادثة قصيرة لتوضيح احتياجك. المساعدة في تحديد الخدمة لا تعني أنك ملزم بالشراء.</p>
+    <a class="btn wa" data-msg="هلا هيبة 💙، محتار/ة أي خدمة تناسب وضعي. بقول لك عن وضعي المهني، وأبي مساعدتك أعرف من وين أبدأ، بدون التزام بالشراء." href="#">ساعديني أختار مجاناً</a>
+  </section>
+</main>
+<section class="links">
+  <h3>تابعيني هنا بعد</h3>
+  <a href="https://whatsapp.com/channel/0029VbDyiA4IHphMGSLtJE3r" target="_blank" rel="noopener">قناة الواتساب</a>
+  <a href="https://www.linkedin.com/newsletters/7520562104886808577/" target="_blank" rel="noopener">نشرة الحقيقة في دقيقة</a>
+  <a href="https://www.linkedin.com/in/hiba-ait-basrhir" target="_blank" rel="noopener">حسابي على LinkedIn</a>
+</section>
+<section class="brandblock">
+    <div class="bname">الحقيقة في دقيقة 💙</div>
+    <p>منصة الحقيقة في دقيقة تساعدك تجهزين سيرة ذاتية قوية وحساب لينكد إن احترافي بخطوات عملية وكلام صريح عن سوق الشغل مثل ما هو — عشان تزيدين فرصك وتوصلك المقابلات اللي تستاهلينها.</p>
+    <div class="soc">
+      <a href="https://www.instagram.com/truth.in.a.minute/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="https://www.linkedin.com/in/hiba-ait-basrhir" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="https://wa.me/971506373317" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+    </div>
+  </section>
+<footer>هيبة 💙 | الحقيقة في دقيقة</footer>
+<a class="sticky-wa wa" data-msg="هلا هيبة 💙، محتار/ة أي خدمة تناسب وضعي. بقول لك عن وضعي المهني، وأبي مساعدتك أعرف من وين أبدأ، بدون التزام بالشراء." href="#">💬 راسليني واتساب</a>
+<script>
+  var WA_NUMBER = "971506373317";
+  document.querySelectorAll("a.wa").forEach(function(a){
+    a.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(a.getAttribute("data-msg"));
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+</script>
+</body>
+</html>
